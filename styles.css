@@ -1,0 +1,401 @@
+:root {
+  --font1: "Libre Baskerville", serif;
+  --font2: "Source Sans Pro", sans-serif;
+  --greenMatrix: #40c31f;
+  --yellow: #fef46d;
+  --mint: #08fdd8;
+  --black: #000;
+  --white: #fff;
+  --grey: #100f0f;
+}
+
+body {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+p {
+  font-family: var(--font2);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+h1.h2.h3 {
+  font-family: var(--font1);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+span {
+  color: var(--mint);
+  text-shadow: var(--white) -6px 0px 1px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+span:hover {
+  text-shadow: var(--white) -26px 0px 1px;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+#header {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin-top: 3rem;
+  display: block;
+  color: #8d8d8d;
+}
+
+.contactBtn {
+  background-color: var(--grey);
+  color: var(--mint);
+  border-radius: 2px;
+  border: 1px inset #08fdd8;
+  letter-spacing: 4px;
+  width: 15rem;
+  height: 3rem;
+  margin-left: 2rem;
+  -webkit-transition: 0.8s ease-out all;
+  transition: 0.8s ease-out all;
+}
+
+.contactBtn:hover {
+  background: #08fdd8;
+  width: 45%;
+  color: var(--black);
+  border-radius: 3px;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform: translate3d(25px, -25px, 0);
+          transform: translate3d(25px, -25px, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+
+nav.open {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+nav.top-right {
+  top: -140px;
+  right: -140px;
+}
+
+.disc {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  padding-top: 10px;
+  border-radius: 250px;
+  -webkit-transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, 190deg);
+          transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, 190deg);
+  pointer-events: none;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
+  transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+}
+
+.disc div {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.open .disc {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.l1 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #010101;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.open .l1 {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+
+.open .l1:hover {
+  background: shade(#010101, 90%);
+  color: var(--greenMatrix);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.open .l1:active {
+  background: shade(#010101, 50%);
+  color: #010101;
+}
+
+.open .l1.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l2 {
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  background: #02332c;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.open .l2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+
+.open .l2:hover {
+  background: shade(#02332c, 90%);
+  color: var(--greenMatrix);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.open .l2:active {
+  background: shade(#02332c, 50%);
+  color: #02332c;
+}
+
+.open .l2.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l3 {
+  top: 100px;
+  left: 100px;
+  right: 100px;
+  bottom: 100px;
+  background: #046657;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.open .l3 {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+
+.open .l3:hover {
+  background: shade(#046657, 90%);
+  color: var(--greenMatrix);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.open .l3:active {
+  background: shade(#046657, 50%);
+  color: #046657;
+}
+
+.open .l3.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l4 {
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  bottom: 150px;
+  background: #059882;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.open .l4 {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+
+.open .l4:hover {
+  background: shade(#059882, 90%);
+  color: var(--greenMatrix);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.open .l4:active {
+  background: shade(#059882, 50%);
+  color: #059882;
+}
+
+.open .l4.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.l5 {
+  top: 200px;
+  left: 200px;
+  right: 200px;
+  bottom: 200px;
+  background: #07cbad;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.open .l5 {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+          transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  opacity: 1;
+}
+
+.open .l5:hover {
+  background: shade(#07cbad, 90%);
+  color: var(--greenMatrix);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.open .l5:active {
+  background: shade(#07cbad, 50%);
+  color: #07cbad;
+}
+
+.open .l5.toggle {
+  -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+}
+
+.toggle {
+  line-height: 100px;
+  padding: 0;
+  width: 100px;
+  background: #08fdd8;
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  pointer-events: auto;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.open .toggle {
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+          transform: rotate3d(0, 0, 1, 0deg);
+}
+
+.toggle:hover {
+  background: shade(#08fdd8, 90%);
+  color: var(--black);
+  font-size: 1.1rem;
+}
+
+.toggle:hover:active {
+  background: shade(#08fdd8, 50%);
+  color: rgba(8, 253, 216, 0.5);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0;
+}
+
+.project .projectPage {
+  border-radius: 8px;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+  -webkit-transition: 0.4s ease-out all;
+  transition: 0.4s ease-out all;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.project .projectPage:hover {
+  border-radius: 2rem;
+  cursor: -webkit-grab;
+  cursor: grab;
+  opacity: 1;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+#imageId {
+  background-color: #40c31f;
+}
+/*# sourceMappingURL=styles.css.map */
