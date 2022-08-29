@@ -370,11 +370,10 @@ nav {
   background-color: rgba(0, 0, 0, 0.596);
 
   div {
-    display: block;
     max-width: 100rem;
 
     video {
-      width: 35rem;
+      width: 30rem;
       height: auto;
     }
   }
@@ -403,7 +402,45 @@ nav {
 .divContainVideo {
   width: 55rem;
   height: 30rem;
-  background-color: var(--grey);
+  background-color: #00000070;
   box-shadow: 5px 3px 30px -3px white;
   opacity: 0.9;
+  display: flex;
+  border-radius: 20px;
+}
+
+.modalDiv {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 0 20px 20px 0;
+  opacity: 0.9;
+  transition: ease-in-out 800ms;
+  margin: 0.1rem;
+
+  p {
+    margin: 1rem;
+    text-align: justify;
+  }
+}
+.modalDiv:hover {
+  background-color: #00000070;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.btnPage {
+  color: var(--white);
+  background-color: var(--mint);
+  margin: 0 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 9.5rem;
+  height: 2.4rem;
+  transform: translateY(0);
+  transition: transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
+}
+
+.btnPage:hover {
+  transform: translateY(-5px) scale(1.1);
+  border-radius: 8px;
 }
