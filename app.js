@@ -1,3 +1,4 @@
+//ARRAY OF OBJECTS WITH THE INFO OF EACH PROJECT
 const arrayProjects = [
   {
     name: "hunting app",
@@ -55,6 +56,7 @@ const arrayProjects = [
   },
 ];
 
+//MENU BTN
 toggle = document.querySelectorAll(".toggle")[0];
 nav = document.querySelectorAll("nav")[0];
 toggle_open_text = "Menu";
