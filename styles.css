@@ -66,17 +66,6 @@ ul {
   list-style: none;
 }
 
-.letterMove {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-}
-
-.letterMove:hover {
-  -webkit-transform: translate(0, -30px);
-          transform: translate(0, -30px);
-  translate: 0.8s ease-out all;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,6 +480,33 @@ nav.top-right {
   border-radius: 0 1rem 1rem 0;
 }
 
+.skillsetUl {
+  margin-bottom: 10rem;
+  padding: 2rem;
+  border-radius: 45px;
+  background-color: #36363670;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  row-gap: 2rem;
+}
+
+.skillsetUl img {
+  width: 10rem;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
+  transition: -webkit-transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 400ms cubic-bezier(0.34, 2, 0.6, 1), -webkit-transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
+}
+
+.skillsetUl img:hover {
+  -webkit-transform: translateY(-5px) scale(1.1);
+          transform: translateY(-5px) scale(1.1);
+}
+
 .contactMe .form {
   width: 41rem;
 }
@@ -627,9 +643,28 @@ nav.top-right {
   transition: transform 400ms cubic-bezier(0.34, 2, 0.6, 1), -webkit-transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
 }
 
+.btnPage p {
+  margin: 0;
+}
+
 .btnPage:hover {
   -webkit-transform: translateY(-5px) scale(1.1);
           transform: translateY(-5px) scale(1.1);
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    font-size: 5rem;
+  }
+  .project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .projectPage video {
+    width: 20rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
