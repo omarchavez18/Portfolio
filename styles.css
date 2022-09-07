@@ -9,6 +9,10 @@
   --grey: #100f0f;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--grey);
   color: var(--white);
@@ -449,6 +453,10 @@ nav.top-right {
   -webkit-transform: rotate(6.3rad);
           transform: rotate(6.3rad);
   border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--grey);
+  color: var(--white);
+  border: white 6.2px double;
 }
 
 .aboutDiv {
@@ -599,7 +607,7 @@ nav.top-right {
   background-color: #00000070;
   -webkit-box-shadow: 5px 3px 30px -3px white;
           box-shadow: 5px 3px 30px -3px white;
-  opacity: 0.9;
+  opacity: 0.98;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,10 +615,10 @@ nav.top-right {
 }
 
 .modalDiv {
-  background-color: var(--white);
+  background-color: #e9e3e3;
   color: var(--black);
   border-radius: 0 20px 20px 0;
-  opacity: 0.9;
+  opacity: 0.95;
   -webkit-transition: ease-in-out 800ms;
   transition: ease-in-out 800ms;
   margin: 0.1rem;
@@ -624,7 +632,7 @@ nav.top-right {
 .modalDiv:hover {
   background-color: #00000070;
   color: var(--white);
-  opacity: 0.8;
+  opacity: 0.95;
 }
 
 .btnPage {
@@ -635,12 +643,8 @@ nav.top-right {
   border-radius: 5px;
   width: 9.5rem;
   height: 2.4rem;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
-  transition: -webkit-transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
-  transition: transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
-  transition: transform 400ms cubic-bezier(0.34, 2, 0.6, 1), -webkit-transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
+  -webkit-transition: ease 800ms;
+  transition: ease 800ms;
 }
 
 .btnPage p {
@@ -651,6 +655,112 @@ nav.top-right {
   -webkit-transform: translateY(-5px) scale(1.1);
           transform: translateY(-5px) scale(1.1);
   border-radius: 8px;
+  -webkit-box-shadow: rgba(70, 182, 230, 0.4) 5px 5px, rgba(25, 124, 224, 0.3) 10px 10px, rgba(13, 60, 203, 0.2) 15px 15px, rgba(20, 5, 156, 0.06) 20px 20px, rgba(3, 6, 107, 0.05) 25px 25px;
+          box-shadow: rgba(70, 182, 230, 0.4) 5px 5px, rgba(25, 124, 224, 0.3) 10px 10px, rgba(13, 60, 203, 0.2) 15px 15px, rgba(20, 5, 156, 0.06) 20px 20px, rgba(3, 6, 107, 0.05) 25px 25px;
+}
+
+@media (max-width: 375px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+  header {
+    margin-bottom: 4rem;
+  }
+  #header#header {
+    font-size: 2.8rem;
+    margin-top: 6rem;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    margin: 2rem 1rem;
+  }
+  .contactBtn:hover {
+    width: 80%;
+  }
+  .project.project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container.container .projectPage.projectPage {
+    width: 21.5rem;
+  }
+  .container.container .btnPop.btnPop:hover {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 10px;
+  }
+  .overlay {
+    height: 70.4%;
+  }
+  .overlay.overlay div video {
+    width: 20.5rem;
+    margin: 0.5rem 0.8rem;
+  }
+  .divContainVideo.divContainVideo {
+    width: 22rem;
+    height: 28.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .divContainVideo.divContainVideo .modalDiv {
+    background-color: #e9e3e3;
+    color: var(--black);
+    border-radius: 20px;
+    opacity: 0.95;
+    height: 15.5rem;
+    margin: 1.1rem;
+    margin-top: -0.6rem;
+  }
+  .divContainVideo.divContainVideo .modalDiv p {
+    font-size: 11px;
+    margin-bottom: 0.1rem;
+  }
+  .divContainVideo.divContainVideo .modalDiv .btnPage {
+    width: 6.5rem;
+    height: 1.8rem;
+  }
+  .aboutDiv.aboutDiv video {
+    width: 22rem;
+  }
+  .aboutDiv.aboutDiv img {
+    width: 9rem;
+    height: 11.5rem;
+    padding-top: 0.5rem;
+  }
+  .aboutDiv.aboutDiv p {
+    top: 286%;
+    left: 8%;
+    width: 12rem;
+    font-size: 7.5px;
+  }
+  .skillsetUl {
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  .skillsetUl img {
+    width: 5.5rem;
+  }
+  .contactMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactMe .form p {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .contactMe .map.map {
+    width: 21.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -663,8 +773,74 @@ nav.top-right {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .projectPage video {
+  .container .projectPage.projectPage {
+    width: 22.5rem;
+  }
+  .container .btnPop.btnPop {
+    top: 35%;
+    left: 37%;
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+  .container .btnPop.btnPop:hover {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 13px;
+  }
+  .portfolioMain {
+    padding-bottom: 2rem;
+  }
+  .aboutDiv {
+    padding-bottom: 2rem;
+  }
+  .aboutDiv video {
+    width: 46rem;
+    border-radius: 1rem;
+  }
+  .aboutDiv p {
+    top: 450%;
+    left: 4%;
+    width: 25rem;
+    font-size: 13.5px;
+  }
+  .aboutDiv img {
+    right: 1rem;
+    position: absolute;
     width: 20rem;
+    height: 26rem;
+  }
+  .skillsetUl {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .contactMe .form ul img {
+    width: 3rem;
+  }
+  .contactMe .map {
+    width: 25rem;
+  }
+  .overlay div video {
+    width: 25rem;
+  }
+  .divContainVideo {
+    width: 47rem;
+    height: 18rem;
+  }
+  .divContainVideo .modalDiv {
+    width: 21rem;
+  }
+  .divContainVideo .modalDiv p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .divContainVideo .modalDiv .btnPage {
+    margin: -5px 1.3rem;
+    width: 7.5rem;
+    height: 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
