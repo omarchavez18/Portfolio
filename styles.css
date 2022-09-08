@@ -472,10 +472,11 @@ nav.top-right {
 
 .aboutDiv p {
   position: absolute;
-  top: 278%;
+  top: 281%;
   left: 2%;
   width: 50rem;
   letter-spacing: 0.3rem;
+  font-size: 20px;
 }
 
 .aboutDiv img {
@@ -677,6 +678,7 @@ nav.top-right {
 @media (max-width: 375px) {
   h2 {
     font-size: 2.2rem;
+    text-align: center;
   }
   header {
     margin-bottom: 4rem;
@@ -750,7 +752,7 @@ nav.top-right {
     padding-top: 0.5rem;
   }
   .aboutDiv.aboutDiv p {
-    top: 286%;
+    top: 289%;
     left: 8%;
     width: 12rem;
     font-size: 7.5px;
@@ -822,7 +824,7 @@ nav.top-right {
     border-radius: 1rem;
   }
   .aboutDiv p {
-    top: 450%;
+    top: 480%;
     left: 4%;
     width: 25rem;
     font-size: 13.5px;

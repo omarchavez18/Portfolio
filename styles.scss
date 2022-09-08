@@ -295,10 +295,11 @@ nav {
   }
   p {
     position: absolute;
-    top: 278%;
+    top: 281%;
     left: 2%;
     width: 50rem;
     letter-spacing: 0.3rem;
+    font-size: 20px;
   }
 
   img {
@@ -477,6 +478,7 @@ nav {
 @media (max-width: 375px) {
   h2 {
     font-size: 2.2rem;
+    text-align: center;
   }
   header {
     margin-bottom: 4rem;
@@ -545,7 +547,7 @@ nav {
       padding-top: 0.5rem;
     }
     p {
-      top: 286%;
+      top: 289%;
       left: 8%;
       width: 12rem;
       font-size: 7.5px;
@@ -617,7 +619,7 @@ nav {
       border-radius: 1rem;
     }
     p {
-      top: 450%;
+      top: 480%;
       left: 4%;
       width: 25rem;
       font-size: 13.5px;
