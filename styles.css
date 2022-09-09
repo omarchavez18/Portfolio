@@ -18,6 +18,10 @@ body {
   color: var(--white);
 }
 
+button {
+  cursor: pointer;
+}
+
 p {
   font-family: var(--font2);
   line-height: 1.7;
