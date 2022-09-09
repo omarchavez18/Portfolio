@@ -447,9 +447,10 @@ nav.top-right {
   border: black 6px double;
   -webkit-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
+  scale: 0;
 }
 
-.project .container .btnPop:hover {
+.container:hover .btnPop {
   -webkit-transform: rotate(6.3rad);
           transform: rotate(6.3rad);
   border-radius: 50%;
@@ -457,6 +458,7 @@ nav.top-right {
   background-color: var(--grey);
   color: var(--white);
   border: white 6.2px double;
+  scale: 1;
 }
 
 .aboutDiv {

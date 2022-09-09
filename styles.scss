@@ -271,16 +271,19 @@ nav {
       letter-spacing: 2.8px;
       border: black 6px double;
       transition: all 700ms ease-in-out;
-    }
-    .btnPop:hover {
-      transform: rotate(6.3rad);
-      border-radius: 50%;
-      cursor: pointer;
-      background-color: var(--grey);
-      color: var(--white);
-      border: white 6.2px double;
+      scale: 0;
     }
   }
+}
+//HERE INDICATES WHEN YOU USE HOVER IN CONTAINER AFFECTS BTNPOP AT THE SAME TIME
+.container:hover .btnPop {
+  transform: rotate(6.3rad);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--grey);
+  color: var(--white);
+  border: white 6.2px double;
+  scale: 1;
 }
 
 // ABOUT ME
