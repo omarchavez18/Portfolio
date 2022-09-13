@@ -257,7 +257,7 @@ nav {
     .projectPage {
       border-radius: 8px;
       height: 14.9rem;
-      width: 27rem;
+      width: 100%;
       object-fit: cover;
       opacity: 0.6;
       transition: 0.4s ease-out all;
@@ -309,8 +309,7 @@ nav {
   padding-bottom: 10rem;
 
   video {
-    width: 50rem;
-
+    width: 100%;
     border-radius: 1rem 0 0 1rem;
   }
   p {
@@ -521,7 +520,7 @@ nav {
     flex-wrap: wrap;
   }
   .container.container .projectPage.projectPage {
-    width: 21.5rem;
+    width: 100%;
   }
   .container.container .btnPop.btnPop:hover {
     width: 5.5rem;
@@ -560,7 +559,7 @@ nav {
   }
   .aboutDiv.aboutDiv {
     video {
-      width: 22rem;
+      width: 100%;
     }
     img {
       width: 9rem;
@@ -611,7 +610,7 @@ nav {
   }
   .container {
     .projectPage.projectPage {
-      width: 22.5rem;
+      width: 100%;
     }
     .btnPop.btnPop {
       top: 35%;
@@ -634,7 +633,7 @@ nav {
     padding-bottom: 2rem;
 
     video {
-      width: 46rem;
+      width: 100%;
       border-radius: 1rem;
     }
     p {

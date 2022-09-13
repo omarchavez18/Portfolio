@@ -431,7 +431,7 @@ nav.top-right {
 .project .container .projectPage {
   border-radius: 8px;
   height: 14.9rem;
-  width: 27rem;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.6;
@@ -495,7 +495,7 @@ nav.top-right {
 }
 
 .aboutDiv video {
-  width: 50rem;
+  width: 100%;
   border-radius: 1rem 0 0 1rem;
 }
 
@@ -733,7 +733,7 @@ nav.top-right {
         flex-wrap: wrap;
   }
   .container.container .projectPage.projectPage {
-    width: 21.5rem;
+    width: 100%;
   }
   .container.container .btnPop.btnPop:hover {
     width: 5.5rem;
@@ -774,7 +774,7 @@ nav.top-right {
     height: 1.8rem;
   }
   .aboutDiv.aboutDiv video {
-    width: 22rem;
+    width: 100%;
   }
   .aboutDiv.aboutDiv img {
     width: 9rem;
@@ -826,7 +826,7 @@ nav.top-right {
         grid-template-columns: repeat(2, 1fr);
   }
   .container .projectPage.projectPage {
-    width: 22.5rem;
+    width: 100%;
   }
   .container .btnPop.btnPop {
     top: 35%;
@@ -848,7 +848,7 @@ nav.top-right {
     padding-bottom: 2rem;
   }
   .aboutDiv video {
-    width: 46rem;
+    width: 100%;
     border-radius: 1rem;
   }
   .aboutDiv p {
