@@ -99,13 +99,13 @@ header {
 .contactBtn {
   background-color: var(--grey);
   color: var(--mint);
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px inset #08fdd8;
   letter-spacing: 4px;
   width: 15rem;
   height: 3rem;
   margin-left: 2rem;
-  transition: 0.8s ease-out all;
+  transition: 0.6s ease-out all;
 }
 
 .contactBtn:hover {
@@ -243,7 +243,7 @@ nav {
 // PORTFOLIO
 
 .portfolioMain {
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 }
 .project {
   display: grid;
@@ -304,29 +304,29 @@ nav {
 }
 
 // ABOUT ME
-.aboutDiv {
-  gap: 0.4rem;
-  padding-bottom: 10rem;
+
+.video {
+  position: relative;
+
+  .overlayVideo {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 4rem;
+    gap: 1rem;
+
+    p {
+      display: inline-block;
+      font-size: 1.9rem;
+    }
+  }
+
+  .imgMe {
+    margin: 1rem;
+  }
 
   video {
     width: 100%;
-    border-radius: 1rem 0 0 1rem;
-  }
-  p {
-    position: absolute;
-
-    width: 50rem;
-    letter-spacing: 0.3rem;
-    font-size: 20px;
-  }
-
-  img {
-    max-width: 100%;
-    width: 44rem;
-    height: 28rem;
-    display: block;
-    object-fit: cover;
-    border-radius: 0 1rem 1rem 0;
   }
 }
 
@@ -339,8 +339,10 @@ nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 2rem;
+  column-gap: 2rem;
+
   img {
-    width: 10rem;
+    width: 8rem;
     transform: translateY(0);
     transition: transform 400ms cubic-bezier(0.34, 2, 0.6, 1);
     position: relative;
@@ -629,22 +631,18 @@ nav {
   .portfolioMain {
     padding-bottom: 2rem;
   }
-  .aboutDiv {
-    padding-bottom: 2rem;
 
-    video {
-      width: 100%;
-      border-radius: 1rem;
+  // ABOUT ME
+
+  .video {
+    position: relative;
+
+    .overlayVideo {
+      padding: 2rem;
     }
-    p {
-      width: 25rem;
-      font-size: 13.5px;
-    }
-    img {
-      right: 1rem;
-      position: absolute;
-      width: 20rem;
-      height: 26rem;
+
+    .imgMe {
+      margin: 1rem;
     }
   }
 
