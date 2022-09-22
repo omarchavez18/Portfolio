@@ -23,12 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
       <div>
-        <h1 id="header">
+        <h1 id="header" class="bounce-in-top">
           Hi, <br />
           I'm <span class="span">O</span>mar, <br />
           web developer
@@ -60,36 +62,54 @@
       </div>
 
       <!-- PROJECTS -->
-      <section id="projects">
+      <section
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        id="projects"
+      >
         <div class="project"></div>
       </section>
     </main>
 
     <!-- ABOUT ME -->
     <h2 class="aboutMe" id="about">Me, Myself and I</h2>
-    <div class="aboutDiv flex2Columns">
-      <section>
-        <div>
-          <p>
-            Hey! My name is Omar. <br />
-            I am a web developer based in León, Guanajuato.
-            <br />
-            I studied in a Microsoft full-stack web developer Bootcamp, working
-            with many people in different teams for each project.
-            <br />
-            I enjoy learning new technologies.
-          </p>
+    <section
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      class="sectionAboutMe"
+    >
+      <div class="video">
+        <div class="overlayVideo">
+          <div>
+            <p>
+              Hey! My name is Omar. <br />
+              I am a web developer based in León, Guanajuato.
+              <br />
+              <br />
+              I studied in a Microsoft full-stack web developer Bootcamp,
+              working with many people in different teams for each project.
+              <br />
+              <br />
+              I enjoy learning new technologies.
+            </p>
+          </div>
+          <div class="imgMe"><img src="./images/me.jpg" alt="me" /></div>
         </div>
         <video src="./video/video.mp4" loop autoplay muted></video>
-      </section>
-
-      <img src="./images/me.jpg" alt="me" />
-    </div>
+      </div>
+    </section>
 
     <!-- SKILLSET -->
     <div>
       <h2>Skillset</h2>
-      <ul class="skillsetUl">
+      <ul
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        class="skillsetUl"
+      >
         <li><img src="./images/html.svg" alt="HTML" /></li>
         <li><img src="./images/css.svg" alt="CSS" /></li>
         <li><img src="./images/bs.svg" alt="BOOTSTRAP" /></li>
@@ -109,7 +129,12 @@
     </div>
 
     <!-- CONTACT -->
-    <section class="contactMe flex2Columns" id="contact">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="4000"
+      class="contactMe"
+      id="contact"
+    >
       <div class="form">
         <h2>Contact me</h2>
         <p>
@@ -164,7 +189,7 @@
         ></iframe>
       </div>
     </section>
-    <footer>
+    <footer class="bounce-in-left">
       <div class="footer">
         <p>
           Design and developed by
@@ -175,7 +200,10 @@
         </p>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./app.js"></script>
   </body>
 </html>
