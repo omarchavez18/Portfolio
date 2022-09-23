@@ -795,9 +795,6 @@ nav.top-right {
     height: 1.8rem;
     margin: auto 1rem;
   }
-  .close-btn {
-    margin-top: 1rem;
-  }
   .aboutDiv.aboutDiv video {
     width: 100%;
   }
@@ -874,6 +871,9 @@ nav.top-right {
   .footer p {
     font-size: 12.5px;
     text-align: center;
+  }
+  .close-btn {
+    margin-top: 1rem;
   }
 }
 
