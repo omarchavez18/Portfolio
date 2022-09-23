@@ -632,6 +632,7 @@ nav.top-right {
   display: grid;
   place-items: center;
   font-weight: 700;
+  margin-top: -23rem;
 }
 
 .close-btn:hover {
@@ -794,6 +795,9 @@ nav.top-right {
     width: 6.5rem;
     height: 1.8rem;
     margin: auto 1rem;
+  }
+  .close-btn {
+    margin-top: -13rem;
   }
   .aboutDiv.aboutDiv video {
     width: 100%;
