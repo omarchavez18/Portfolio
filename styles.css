@@ -632,7 +632,7 @@ nav.top-right {
   display: grid;
   place-items: center;
   font-weight: 700;
-  margin-top: -23rem;
+  margin-top: 0rem;
 }
 
 .close-btn:hover {
