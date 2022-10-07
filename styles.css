@@ -483,7 +483,7 @@ nav.top-right {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 40%;
-  font-size: 1.2vw;
+  font-size: 0.7rem;
   text-align: center;
   letter-spacing: 2.8px;
   border: black 6px double;
@@ -778,7 +778,6 @@ nav.top-right {
   .container.container .btnPop.btnPop:hover {
     width: 5.5rem;
     height: 5.5rem;
-    font-size: 10px;
   }
   .overlay {
     height: 95%;
@@ -883,13 +882,11 @@ nav.top-right {
   .container .btnPop.btnPop {
     width: 5.5rem;
     height: 5.5rem;
-    font-size: 11px;
     letter-spacing: 2.5px;
   }
   .container .btnPop.btnPop:hover {
     width: 6.5rem;
     height: 6.5rem;
-    font-size: 13px;
   }
   .portfolioMain {
     padding-bottom: 2rem;
