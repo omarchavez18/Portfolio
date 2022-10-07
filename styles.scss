@@ -33,7 +33,9 @@ a {
   color: var(--white);
 }
 
-h1.h2.h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font1);
 }
 //move animation
@@ -47,7 +49,7 @@ h1.h2.h3 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--mint);
   position: relative;
   animation: mymove 5s;
@@ -256,6 +258,9 @@ nav {
 
   .container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .projectPage {
       border-radius: 8px;
@@ -279,8 +284,6 @@ nav {
       background-color: var(--mint);
       color: var(--black);
       position: absolute;
-      top: 35%;
-      left: 34%;
       width: 6.5rem;
       height: 6.5rem;
       display: flex;
@@ -516,7 +519,7 @@ nav {
     margin-bottom: 4rem;
   }
   #header#header {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin-top: 6rem;
   }
   .subtitle {
@@ -659,7 +662,7 @@ nav {
 //tablet size
 @media (max-width: 768px) {
   #header {
-    font-size: 5rem;
+    font-size: 4.2rem;
   }
   .project {
     display: grid;
@@ -670,8 +673,6 @@ nav {
       width: 100%;
     }
     .btnPop.btnPop {
-      top: 35%;
-      left: 37%;
       width: 5.5rem;
       height: 5.5rem;
       font-size: 11px;
