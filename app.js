@@ -127,17 +127,26 @@ function showModal(project) {
 
   const technologies = document.createElement("DIV");
   technologies.innerHTML = `<p>${project.technologies}</p> <br>`;
+  newDiv.appendChild(technologies);
+
+  const btnPageDiv = document.createElement("div");
+  btnPageDiv.setAttribute("class", "btnPageDiv");
 
   const btnPage = document.createElement("button");
-  btnPage.setAttribute("class", "btnPage ");
+  btnPage.setAttribute("class", "btnPage");
   btnPage.innerHTML = `<a  href="${project.liveDemo}" target= "_blank"><p> View Website</p></a>`;
+
+  btnPageDiv.appendChild(btnPage);
+
   const btnCode = document.createElement("button");
   btnCode.setAttribute("class", "btnPage");
   btnCode.innerHTML = `<a  href="${project.repository}" target= "_blank"><p>View Code</p></a>`;
 
-  newDiv.appendChild(technologies);
-  newDiv.appendChild(btnPage);
-  newDiv.appendChild(btnCode);
+  btnPageDiv.appendChild(btnCode);
+
+  newDiv.appendChild(btnPageDiv);
+  // newDiv.appendChild(btnPage);
+  // newDiv.appendChild(btnCode);
 
   // create the overlay
   const overlay = document.createElement("DIV");

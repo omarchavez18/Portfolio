@@ -412,16 +412,7 @@ nav {
   place-items: center; // center the image
 
   //darkens the outside of the image to make the image stand out
-  background-color: rgba(0, 0, 0, 0.596);
-
-  div {
-    max-width: 100rem;
-
-    video {
-      width: 50%;
-      height: auto;
-    }
-  }
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .close-btn {
@@ -446,51 +437,59 @@ nav {
 
 .divContainVideo {
   width: 70%;
-  height: 27rem;
+  height: 32rem;
   background-color: #00000070;
   box-shadow: 5px 3px 30px -3px white;
   opacity: 0.98;
   display: flex;
+  flex-direction: column;
   border-radius: 20px;
+}
+.videoModalStyle {
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  height: 50%;
 }
 
 .modalDiv {
-  background-color: rgb(233, 227, 227);
-  color: var(--black);
-  border-radius: 0 20px 20px 0;
-  opacity: 0.95;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0 0 20px 20px;
   transition: ease-in-out 800ms;
-  margin: 0.1rem;
-  width: 50%;
+  height: 50%;
 
   p {
     margin: 1rem;
-    text-align: justify;
+    text-align: center;
+    font-size: inherit;
   }
 }
 .modalDiv:hover {
-  background-color: #00000070;
-  color: var(--white);
-  opacity: 0.95;
+  color: var(--mint);
 }
 
-.btnPage {
-  color: var(--white);
-  background-color: var(--mint);
-  margin: 0 1rem;
-  border: none;
-  border-radius: 5px;
-  width: 6.5rem;
-  height: 2rem;
+.btnPageDiv {
+  display: flex;
+  justify-content: center;
 
-  transition: ease 800ms;
+  .btnPage {
+    background-color: var(--mint);
+    margin: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 10rem;
+    height: 2.3rem;
+    transition: ease 800ms;
 
-  p {
-    margin: 0;
+    p {
+      margin: 0;
+    }
   }
 }
 
 .btnPage:hover {
+  background-color: var(--mint);
+  color: var(--black);
   transform: translateY(-5px) scale(1.1);
   border-radius: 8px;
   box-shadow: rgba(70, 182, 230, 0.4) 5px 5px, rgba(25, 124, 224, 0.3) 10px 10px,
@@ -550,42 +549,30 @@ nav {
     height: 5.5rem;
   }
   .overlay {
-    height: 95%;
+    height: 100%;
+  }
+
+  .divContainVideo.divContainVideo.divContainVideo {
+    width: 60%;
+    height: 30rem;
+  }
+  .videoModalStyle.videoModalStyle {
+    width: 100%;
+    height: 40%;
+  }
+
+  .modalDiv.modalDiv.modalDiv {
+    height: 60%;
+    p {
+      margin: 0.5rem;
+      font-size: 2.8vw;
+    }
   }
 
   .image-text.image-text.image-text {
     .imgMe.imgMe.imgMe {
       width: 75%;
       margin: 0.5rem auto;
-    }
-  }
-  .overlay.overlay div video {
-    width: 92%;
-    margin: 0.5rem 0.8rem;
-  }
-  .divContainVideo.divContainVideo {
-    width: 95%;
-    height: 26rem;
-    display: flex;
-    flex-wrap: wrap;
-    .modalDiv {
-      background-color: #e9e3e3;
-      color: var(--black);
-      border-radius: 20px;
-      opacity: 0.95;
-      width: 89%;
-      height: 16.5rem;
-      margin: 1.1rem;
-      margin-top: -0.6rem;
-      p {
-        font-size: 11px;
-        margin-bottom: 0.1rem;
-      }
-      .btnPage {
-        width: 6.5rem;
-        height: 1.8rem;
-        margin: auto 1rem;
-      }
     }
   }
 
@@ -646,6 +633,9 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .divContainVideo.divContainVideo {
+    height: 39rem;
+  }
   .container {
     .projectPage.projectPage {
       width: 100%;
@@ -704,35 +694,10 @@ nav {
     }
   }
 
-  .overlay div video {
-    width: 50%;
-  }
-
-  .divContainVideo {
-    width: 80%;
-    height: 27rem;
-
-    .modalDiv {
-      width: 50%;
-
-      p {
-        font-size: 2.2vw;
-        text-align: center;
-      }
-
-      .btnPage {
-        margin: -5px 1.3rem;
-        width: 7.5rem;
-        height: 2rem;
-      }
+  .modalDiv.modalDiv {
+    p {
+      font-size: 2vw;
     }
-  }
-
-  .contactBtn:hover {
-    background: #08fdd8;
-    width: 40%;
-    color: var(--black);
-    border-radius: 3px;
   }
 }
 
