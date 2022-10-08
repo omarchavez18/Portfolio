@@ -630,7 +630,7 @@ nav.top-right {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background-color: rgba(0, 0, 0, 0.596);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .close-btn {
@@ -656,7 +656,7 @@ nav.top-right {
 
 .divContainVideo {
   width: 70%;
-  height: 30rem;
+  height: 32rem;
   background-color: #00000070;
   -webkit-box-shadow: 5px 3px 30px -3px white;
           box-shadow: 5px 3px 30px -3px white;
@@ -690,13 +690,23 @@ nav.top-right {
 .modalDiv p {
   margin: 1rem;
   text-align: center;
+  font-size: inherit;
 }
 
 .modalDiv:hover {
   color: var(--mint);
 }
 
-.btnPage {
+.btnPageDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnPageDiv .btnPage {
   background-color: var(--mint);
   margin: 0 1rem;
   border: none;
@@ -707,7 +717,7 @@ nav.top-right {
   transition: ease 800ms;
 }
 
-.btnPage p {
+.btnPageDiv .btnPage p {
   margin: 0;
 }
 
@@ -779,43 +789,26 @@ nav.top-right {
     height: 5.5rem;
   }
   .overlay {
-    height: 95%;
+    height: 100%;
+  }
+  .divContainVideo.divContainVideo.divContainVideo {
+    width: 60%;
+    height: 30rem;
+  }
+  .videoModalStyle.videoModalStyle {
+    width: 100%;
+    height: 40%;
+  }
+  .modalDiv.modalDiv.modalDiv {
+    height: 60%;
+  }
+  .modalDiv.modalDiv.modalDiv p {
+    margin: 0.5rem;
+    font-size: 2.8vw;
   }
   .image-text.image-text.image-text .imgMe.imgMe.imgMe {
     width: 75%;
     margin: 0.5rem auto;
-  }
-  .overlay.overlay div video {
-    width: 92%;
-    margin: 0.5rem 0.8rem;
-  }
-  .divContainVideo.divContainVideo {
-    width: 95%;
-    height: 26rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .divContainVideo.divContainVideo .modalDiv {
-    background-color: #e9e3e3;
-    color: var(--black);
-    border-radius: 20px;
-    opacity: 0.95;
-    width: 89%;
-    height: 16.5rem;
-    margin: 1.1rem;
-    margin-top: -0.6rem;
-  }
-  .divContainVideo.divContainVideo .modalDiv p {
-    font-size: 11px;
-    margin-bottom: 0.1rem;
-  }
-  .divContainVideo.divContainVideo .modalDiv .btnPage {
-    width: 6.5rem;
-    height: 1.8rem;
-    margin: auto 1rem;
   }
   .aboutDiv.aboutDiv video {
     width: 100%;
@@ -875,6 +868,9 @@ nav.top-right {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .divContainVideo.divContainVideo {
+    height: 39rem;
+  }
   .container .projectPage.projectPage {
     width: 100%;
   }
@@ -925,30 +921,8 @@ nav.top-right {
   .contactMe .map {
     width: 100%;
   }
-  .overlay div video {
-    width: 50%;
-  }
-  .divContainVideo {
-    width: 80%;
-    height: 27rem;
-  }
-  .divContainVideo .modalDiv {
-    width: 50%;
-  }
-  .divContainVideo .modalDiv p {
-    font-size: 2.2vw;
-    text-align: center;
-  }
-  .divContainVideo .modalDiv .btnPage {
-    margin: -5px 1.3rem;
-    width: 7.5rem;
-    height: 2rem;
-  }
-  .contactBtn:hover {
-    background: #08fdd8;
-    width: 40%;
-    color: var(--black);
-    border-radius: 3px;
+  .modalDiv.modalDiv p {
+    font-size: 2vw;
   }
 }
 
