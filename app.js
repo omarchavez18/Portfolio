@@ -129,8 +129,9 @@ function showModal(project) {
   technologies.innerHTML = `<p>${project.technologies}</p> <br>`;
 
   const btnPage = document.createElement("button");
-  btnPage.setAttribute("class", "btnPage ");
+  btnPage.setAttribute("class", "btnPage");
   btnPage.innerHTML = `<a  href="${project.liveDemo}" target= "_blank"><p> View Website</p></a>`;
+
   const btnCode = document.createElement("button");
   btnCode.setAttribute("class", "btnPage");
   btnCode.innerHTML = `<a  href="${project.repository}" target= "_blank"><p>View Code</p></a>`;

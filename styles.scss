@@ -413,15 +413,6 @@ nav {
 
   //darkens the outside of the image to make the image stand out
   background-color: rgba(0, 0, 0, 0.596);
-
-  div {
-    max-width: 100rem;
-
-    video {
-      width: 50%;
-      height: auto;
-    }
-  }
 }
 
 .close-btn {
@@ -446,43 +437,43 @@ nav {
 
 .divContainVideo {
   width: 70%;
-  height: 27rem;
+  height: 30rem;
   background-color: #00000070;
   box-shadow: 5px 3px 30px -3px white;
   opacity: 0.98;
   display: flex;
+  flex-direction: column;
   border-radius: 20px;
+}
+.videoModalStyle {
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  height: 50%;
 }
 
 .modalDiv {
-  background-color: rgb(233, 227, 227);
-  color: var(--black);
-  border-radius: 0 20px 20px 0;
-  opacity: 0.95;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0 0 20px 20px;
   transition: ease-in-out 800ms;
-  margin: 0.1rem;
-  width: 50%;
+  height: 50%;
 
   p {
     margin: 1rem;
-    text-align: justify;
+    text-align: center;
   }
 }
 .modalDiv:hover {
-  background-color: #00000070;
-  color: var(--white);
-  opacity: 0.95;
+  color: var(--mint);
 }
 
 .btnPage {
-  color: var(--white);
   background-color: var(--mint);
   margin: 0 1rem;
   border: none;
   border-radius: 5px;
-  width: 6.5rem;
-  height: 2rem;
-
+  width: 10rem;
+  height: 2.3rem;
   transition: ease 800ms;
 
   p {
@@ -491,6 +482,8 @@ nav {
 }
 
 .btnPage:hover {
+  background-color: var(--mint);
+  color: var(--black);
   transform: translateY(-5px) scale(1.1);
   border-radius: 8px;
   box-shadow: rgba(70, 182, 230, 0.4) 5px 5px, rgba(25, 124, 224, 0.3) 10px 10px,

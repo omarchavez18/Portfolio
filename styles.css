@@ -633,15 +633,6 @@ nav.top-right {
   background-color: rgba(0, 0, 0, 0.596);
 }
 
-.overlay div {
-  max-width: 100rem;
-}
-
-.overlay div video {
-  width: 50%;
-  height: auto;
-}
-
 .close-btn {
   width: 4rem;
   height: 4rem;
@@ -665,7 +656,7 @@ nav.top-right {
 
 .divContainVideo {
   width: 70%;
-  height: 27rem;
+  height: 30rem;
   background-color: #00000070;
   -webkit-box-shadow: 5px 3px 30px -3px white;
           box-shadow: 5px 3px 30px -3px white;
@@ -673,39 +664,45 @@ nav.top-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 20px;
 }
 
+.videoModalStyle {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  height: 50%;
+}
+
 .modalDiv {
-  background-color: #e9e3e3;
-  color: var(--black);
-  border-radius: 0 20px 20px 0;
-  opacity: 0.95;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0 0 20px 20px;
   -webkit-transition: ease-in-out 800ms;
   transition: ease-in-out 800ms;
-  margin: 0.1rem;
-  width: 50%;
+  height: 50%;
 }
 
 .modalDiv p {
   margin: 1rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .modalDiv:hover {
-  background-color: #00000070;
-  color: var(--white);
-  opacity: 0.95;
+  color: var(--mint);
 }
 
 .btnPage {
-  color: var(--white);
   background-color: var(--mint);
   margin: 0 1rem;
   border: none;
   border-radius: 5px;
-  width: 6.5rem;
-  height: 2rem;
+  width: 10rem;
+  height: 2.3rem;
   -webkit-transition: ease 800ms;
   transition: ease 800ms;
 }
@@ -715,6 +712,8 @@ nav.top-right {
 }
 
 .btnPage:hover {
+  background-color: var(--mint);
+  color: var(--black);
   -webkit-transform: translateY(-5px) scale(1.1);
           transform: translateY(-5px) scale(1.1);
   border-radius: 8px;
