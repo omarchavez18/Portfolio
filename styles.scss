@@ -33,7 +33,9 @@ a {
   color: var(--white);
 }
 
-h1.h2.h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font1);
 }
 //move animation
@@ -47,7 +49,7 @@ h1.h2.h3 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: var(--mint);
   position: relative;
   animation: mymove 5s;
@@ -256,6 +258,9 @@ nav {
 
   .container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .projectPage {
       border-radius: 8px;
@@ -279,15 +284,13 @@ nav {
       background-color: var(--mint);
       color: var(--black);
       position: absolute;
-      top: 35%;
-      left: 34%;
       width: 6.5rem;
       height: 6.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 40%;
-      font-size: 1.2vw;
+      font-size: 0.7rem;
       text-align: center;
       letter-spacing: 2.8px;
       border: black 6px double;
@@ -308,29 +311,34 @@ nav {
 }
 
 // ABOUT ME
+.sectionAboutMe {
+  border: white dotted 0.5rem;
+  .video {
+    position: relative;
 
-.video {
-  position: relative;
+    .overlayVideo {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
 
-  .overlayVideo {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 4rem;
-    gap: 1rem;
+      .image-text {
+        height: 100%;
 
-    p {
-      display: inline-block;
-      font-size: 2vw;
+        .imgMe {
+          width: 30%;
+          margin: 0.5rem auto;
+        }
+        p {
+          font-size: 1.8vw;
+          text-align: center;
+          margin: 1rem;
+        }
+      }
     }
-  }
 
-  .imgMe {
-    margin: 1rem;
-  }
-
-  video {
-    width: 100%;
+    video {
+      width: 100%;
+    }
   }
 }
 
@@ -516,7 +524,7 @@ nav {
     margin-bottom: 4rem;
   }
   #header#header {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin-top: 6rem;
   }
   .subtitle {
@@ -540,10 +548,16 @@ nav {
   .container.container .btnPop.btnPop:hover {
     width: 5.5rem;
     height: 5.5rem;
-    font-size: 10px;
   }
   .overlay {
     height: 95%;
+  }
+
+  .image-text.image-text.image-text {
+    .imgMe.imgMe.imgMe {
+      width: 75%;
+      margin: 0.5rem auto;
+    }
   }
   .overlay.overlay div video {
     width: 92%;
@@ -590,39 +604,6 @@ nav {
     }
   }
 
-  .sectionAboutMe {
-    margin-bottom: 1rem;
-    height: 29rem;
-
-    .video {
-      position: relative;
-      width: 100%;
-
-      .overlayVideo {
-        padding: 1rem;
-        height: 27rem;
-        margin-bottom: 1rem;
-        position: absolute;
-        display: flex;
-        flex-direction: column-reverse;
-
-        p {
-          text-align: center;
-          width: 95%;
-          font-size: 2.8vw;
-        }
-        .imgMe {
-          margin-left: 2.7rem;
-          width: 70%;
-        }
-      }
-      video {
-        width: 100%;
-        height: 47rem;
-      }
-    }
-  }
-
   .skillsetUl.skillsetUl {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -659,7 +640,7 @@ nav {
 //tablet size
 @media (max-width: 768px) {
   #header {
-    font-size: 5rem;
+    font-size: 4.2rem;
   }
   .project {
     display: grid;
@@ -670,17 +651,14 @@ nav {
       width: 100%;
     }
     .btnPop.btnPop {
-      top: 35%;
-      left: 37%;
       width: 5.5rem;
       height: 5.5rem;
-      font-size: 11px;
+
       letter-spacing: 2.5px;
     }
     .btnPop.btnPop:hover {
       width: 6.5rem;
       height: 6.5rem;
-      font-size: 13px;
     }
   }
   .portfolioMain {
@@ -689,15 +667,24 @@ nav {
 
   // ABOUT ME
 
-  .video {
-    position: relative;
+  .sectionAboutMe {
+    .video {
+      position: relative;
+      width: 100%;
 
-    .overlayVideo {
-      padding: 2rem;
-    }
+      .image-text.image-text {
+        p {
+          font-size: inherit;
+        }
+        .imgMe {
+          width: 40%;
+        }
+      }
 
-    .imgMe {
-      margin: 1rem;
+      video {
+        width: 100%;
+        height: 47rem;
+      }
     }
   }
 
@@ -707,6 +694,8 @@ nav {
     margin-bottom: 3rem;
   }
   .contactMe {
+    display: flex;
+    flex-direction: column;
     .form ul img {
       width: 3rem;
     }
