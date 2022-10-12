@@ -140,6 +140,7 @@ nav {
   user-select: none;
   transform: translate3d($size * 0.5, -$size * 0.5, 0);
   transition: transform $transition $bounce;
+  z-index: 1;
 
   &.open {
     transform: translate3d(0, 0, 0);
@@ -312,7 +313,7 @@ nav {
 
 // ABOUT ME
 .sectionAboutMe {
-  border: white dotted 0.5rem;
+  border: white dotted 0.3rem;
   .video {
     position: relative;
 
@@ -457,7 +458,7 @@ nav {
   border-radius: 0 0 20px 20px;
   transition: ease-in-out 800ms;
   height: 50%;
-
+  overflow: scroll;
   p {
     margin: 1rem;
     text-align: center;
@@ -516,7 +517,6 @@ nav {
 //cellphone size
 @media (max-width: 375px) {
   h2 {
-    //font-size: 2.2rem;
     text-align: center;
   }
   header {
@@ -673,7 +673,7 @@ nav {
 
       video {
         width: 100%;
-        height: 47rem;
+        height: 35rem;
       }
     }
   }
