@@ -158,6 +158,7 @@ nav {
   transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+  z-index: 1;
 }
 
 nav.open {
@@ -503,12 +504,9 @@ nav.top-right {
   scale: 1;
 }
 
-.sectionAboutMe {
-  border: white dotted 0.5rem;
-}
-
 .sectionAboutMe .video {
   position: relative;
+  overflow: scroll;
 }
 
 .sectionAboutMe .video .overlayVideo {
@@ -539,6 +537,8 @@ nav.top-right {
 
 .sectionAboutMe .video video {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .skillsetUl {
@@ -550,6 +550,7 @@ nav.top-right {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
   row-gap: 2rem;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
@@ -685,6 +686,7 @@ nav.top-right {
   -webkit-transition: ease-in-out 800ms;
   transition: ease-in-out 800ms;
   height: 50%;
+  overflow: scroll;
 }
 
 .modalDiv p {
@@ -898,7 +900,7 @@ nav.top-right {
   }
   .sectionAboutMe .video video {
     width: 100%;
-    height: 47rem;
+    height: 35rem;
   }
   .skillsetUl {
     -ms-grid-columns: (1fr)[3];
@@ -1146,5 +1148,41 @@ nav.top-right {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 56%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: var(--mint);
+  color: var(--white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 33%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--mint) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 /*# sourceMappingURL=styles.css.map */
