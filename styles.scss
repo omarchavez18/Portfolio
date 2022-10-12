@@ -351,6 +351,7 @@ nav {
   background-color: #36363670;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
   row-gap: 2rem;
   column-gap: 2rem;
 
@@ -918,4 +919,41 @@ nav {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+}
+
+//tooltip
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 56%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: var(--mint);
+  color: var(--white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 33%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--mint) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
