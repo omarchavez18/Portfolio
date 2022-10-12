@@ -313,10 +313,9 @@ nav {
 
 // ABOUT ME
 .sectionAboutMe {
-  border: white dotted 0.3rem;
   .video {
     position: relative;
-
+    overflow: scroll;
     .overlayVideo {
       position: absolute;
       display: flex;
@@ -339,6 +338,7 @@ nav {
 
     video {
       width: 100%;
+      object-fit: cover;
     }
   }
 }

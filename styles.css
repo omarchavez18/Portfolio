@@ -504,12 +504,9 @@ nav.top-right {
   scale: 1;
 }
 
-.sectionAboutMe {
-  border: white dotted 0.3rem;
-}
-
 .sectionAboutMe .video {
   position: relative;
+  overflow: scroll;
 }
 
 .sectionAboutMe .video .overlayVideo {
@@ -540,6 +537,8 @@ nav.top-right {
 
 .sectionAboutMe .video video {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .skillsetUl {
