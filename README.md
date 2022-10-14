@@ -7,9 +7,11 @@ To see the Portfolio click in the next link
 [Portfolio](https://omarchavez18.github.io/Portfolio/)
 
 ![Captura de pantalla 2022-09-07 210836](https://user-images.githubusercontent.com/84557440/189018143-b30be758-56ef-46e0-b743-1315b486c6c5.png)
-![Captura de pantalla 2022-09-07 210905](https://user-images.githubusercontent.com/84557440/189018153-0e3e0ebb-4181-42f5-bb3c-25f6783af048.png)
-![Captura de pantalla 2022-09-07 210950](https://user-images.githubusercontent.com/84557440/189018154-d013c004-4c51-4657-a4c7-d7794d15b62a.png)
-![Captura de pantalla 2022-09-07 211011](https://user-images.githubusercontent.com/84557440/189018156-99697dfd-88fb-49d6-89cb-bacdfed7ce59.png)
+![ssportfolio](https://user-images.githubusercontent.com/84557440/195751085-41f6a11b-e93c-43bd-923c-e41623ac00ed.png)
+![ssMe](https://user-images.githubusercontent.com/84557440/195751087-b9d1e4e5-a421-4c77-9799-a1dae8ff5d62.png)
+![ssSkillset](https://user-images.githubusercontent.com/84557440/195751089-3766ba79-a3a0-4cd5-9b6f-8cd26ee13e3f.png)
+![ssContactMe](https://user-images.githubusercontent.com/84557440/195751090-bfab3f0a-acbf-4813-8bc3-a17495a5746c.png)
+
 
 ## Built With
 
