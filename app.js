@@ -117,7 +117,7 @@ function createGallery() {
 // FUNCTION TO CREATE A MODAL
 function showModal(project) {
   const modal = document.createElement("DIV");
-  modal.setAttribute("class", "divContainVideo flex2Columns");
+  modal.setAttribute("class", "divContainVideo");
   modal.innerHTML = `<video class="videoModalStyle" src="./videoGif/${project.video}.mp4" loop autoplay muted></video>`;
 
   const newDiv = document.createElement("div");
