@@ -18,6 +18,10 @@ body {
   color: var(--white);
 }
 
+body.fijar-body {
+  overflow: hidden;
+}
+
 header > div {
   width: 100%;
 }
@@ -506,7 +510,6 @@ nav.top-right {
 
 .sectionAboutMe .video {
   position: relative;
-  overflow: scroll;
 }
 
 .sectionAboutMe .video .overlayVideo {
@@ -628,15 +631,27 @@ nav.top-right {
   bottom: 0;
   width: 100%;
   height: 100%;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .close-btn {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: white;
   color: black;
@@ -657,7 +672,7 @@ nav.top-right {
 
 .divContainVideo {
   width: 70%;
-  height: 32rem;
+  height: 39rem;
   background-color: #00000070;
   -webkit-box-shadow: 5px 3px 30px -3px white;
           box-shadow: 5px 3px 30px -3px white;
@@ -686,7 +701,6 @@ nav.top-right {
   -webkit-transition: ease-in-out 800ms;
   transition: ease-in-out 800ms;
   height: 50%;
-  overflow: scroll;
 }
 
 .modalDiv p {
@@ -720,6 +734,7 @@ nav.top-right {
 }
 
 .btnPageDiv .btnPage p {
+  line-height: 1.1;
   margin: 0;
 }
 
@@ -871,7 +886,7 @@ nav.top-right {
         grid-template-columns: repeat(2, 1fr);
   }
   .divContainVideo.divContainVideo {
-    height: 39rem;
+    height: 36rem;
   }
   .container .projectPage.projectPage {
     width: 100%;
