@@ -1,6 +1,15 @@
 //ARRAY OF OBJECTS WITH THE INFO OF EACH PROJECT
 const arrayProjects = [
   {
+    name: "Aloha Surf",
+    description:
+      "This project is a small web page about a surfboard shop, the purpose of the project is the implementation of webpack.",
+    video: 6,
+    technologies: ["HTML, CSS, JAVASCRIPT, WEBPACK."],
+    liveDemo: "https://omarchavez18.github.io/sportsProject/",
+    repository: "https://github.com/omarchavez18/sportsProject",
+  },
+  {
     name: "Hunting App",
     description:
       "Hunting page about the season, zone, type, price, and animal stats, the app show you all the animals if you want a big or small game, available animals by season, by country, or by price.",
@@ -48,15 +57,6 @@ const arrayProjects = [
     technologies: ["HTML, CSS."],
     liveDemo: "https://omarchavez18.github.io/TNW-proyect/",
     repository: "https://github.com/omarchavez18/TNW-proyect",
-  },
-  {
-    name: "Coffee Blog",
-    description:
-      "This project is one of the first ones that I developed, it's about a coffee blog that talks about tips, benefits of the coffee, recipes, and many more things.",
-    video: 6,
-    technologies: ["HTML, CSS."],
-    liveDemo: "https://omarchavez18.github.io/coffee-blog/",
-    repository: "https://github.com/omarchavez18/coffee-blog",
   },
 ];
 
