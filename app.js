@@ -15,7 +15,7 @@ const arrayProjects = [
       "Hunting page about the season, zone, type, price, and animal stats, the app show you all the animals if you want a big or small game, available animals by season, by country, or by price.",
     video: 1,
     technologies: [
-      "HTML, SCSS, JAVASCRIPT, HEROKU, JEST, EXPRESS, NODE JS, POSTMAN.",
+      "HTML, SCSS, BOOTSTRAP, JAVASCRIPT, HEROKU, JEST, EXPRESS, NODE JS, POSTMAN.",
     ],
     liveDemo: "https://omarchavez18.github.io/Hunting-App/",
     repository: "https://github.com/omarchavez18/Hunting-App",
