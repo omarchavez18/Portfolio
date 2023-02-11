@@ -6,7 +6,7 @@ const arrayProjects = [
       "This project is a small web page about a surfboard shop, the purpose of the project is the implementation of webpack.",
     video: 6,
     technologies: ["HTML, CSS, JAVASCRIPT, WEBPACK."],
-    liveDemo: "https://omarchavez18.github.io/sportsProject/",
+    liveDemo: "https://omarchavez18.github.io/AlohaSurf/",
     repository: "https://github.com/omarchavez18/sportsProject",
   },
   {
