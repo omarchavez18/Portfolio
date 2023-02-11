@@ -7,7 +7,7 @@ const arrayProjects = [
     video: 6,
     technologies: ["HTML, CSS, JAVASCRIPT, WEBPACK."],
     liveDemo: "https://omarchavez18.github.io/AlohaSurf/",
-    repository: "https://github.com/omarchavez18/sportsProject",
+    repository: "https://github.com/omarchavez18/AlohaSurf",
   },
   {
     name: "Hunting App",
