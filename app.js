@@ -1,6 +1,15 @@
 //ARRAY OF OBJECTS WITH THE INFO OF EACH PROJECT
 const arrayProjects = [
   {
+    name: "MoviesApp",
+    description:
+      "Movies App that return movies,series and trends with access to trailers, all the data comes from an TMDB api.",
+    video: 4,
+    technologies: ["HTML, CSS, JAVASCRIPT, REACT."],
+    liveDemo: "https://moviesapptmdb.netlify.app/",
+    repository: "https://github.com/omarchavez18/MovieApp",
+  },
+  {
     name: "Aloha Surf",
     description:
       "This project is a small web page about a surfboard shop, the purpose of the project is the implementation of webpack.",
@@ -39,24 +48,12 @@ const arrayProjects = [
     repository: "https://github.com/omarchavez18/festival-de-musica",
   },
   {
-    name: "Vaccines",
-    description:
-      "This page is a clone of a landing page about a campaign to promote vaccination, it talks about different topics, like why we should vaccines, the benefits of COVID-19 vaccination, how we must prepare for the vaccination, and where and when the vaccination will be.",
-    video: 4,
-    technologies: ["HTML, CSS."],
-    liveDemo:
-      "https://omarchavez18.github.io/FrontEnd-Mission-CSS-Microsoft-Launch-X/",
-    repository:
-      "https://github.com/omarchavez18/FrontEnd-Mission-CSS-Microsoft-Launch-X",
-  },
-  {
-    name: "TNW",
-    description:
-      "This project is a clone of the TNW website a technology-focused media company that manages several initiatives focused on international technology news, business, and culture. Its brands include TNW Blog, TNW Events, TNW Deals, and TNW Academy.",
+    name: "Bootstrap Project",
+    description: "This project was built entirely with Bootstrap components.",
     video: 5,
-    technologies: ["HTML, CSS."],
-    liveDemo: "https://omarchavez18.github.io/TNW-proyect/",
-    repository: "https://github.com/omarchavez18/TNW-proyect",
+    technologies: ["HTML, CSS, Bootstrap"],
+    liveDemo: "https://omarchavez18.github.io/bootstrap-project/",
+    repository: "https://github.com/omarchavez18/bootstrap-project",
   },
 ];
 
