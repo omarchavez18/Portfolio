@@ -1,11 +1,14 @@
 # Portfolio
-A Portfolio of my most relevant projects.
+>A Portfolio of my most relevant projects.
 
-this project is to show a few of the projects that I have done, and all the technologies that I already use and still learning, with access to each website project and also to the repositories.
 
+## Live Demo
 To see the Portfolio click in the next link
 [Portfolio](https://omarchavez18.github.io/Portfolio/)
 
+
+
+## Sneak peak
 ![Captura de pantalla 2022-09-07 210836](https://user-images.githubusercontent.com/84557440/189018143-b30be758-56ef-46e0-b743-1315b486c6c5.png)
 ![ssportfolio](https://user-images.githubusercontent.com/84557440/195751085-41f6a11b-e93c-43bd-923c-e41623ac00ed.png)
 ![ssMe](https://user-images.githubusercontent.com/84557440/195751087-b9d1e4e5-a421-4c77-9799-a1dae8ff5d62.png)
@@ -18,6 +21,27 @@ To see the Portfolio click in the next link
 - HTML
 - SCSS
 - JAVASCRIPT
+- BOOTSTRAP
+
+### Description
+
+    Front end of my Portafolio.
+    
+    This project is to show a few of the projects that I have done and all the technologies that I already use and still learning,
+    with access to each website project and also to the repositories.
+
+    Thank you for look in my Portafolio!
+
+
+## Prerequisites
+
+  - Internet Connection
+  - Web Browser
+  - Code Editor 
+  - Node Package Manager (NPM)
+
+
+
 
 👤 &nbsp; **Omar Chávez**
 
